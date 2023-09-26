@@ -8,4 +8,4 @@ activityRouter.post("/add",addActivity);
 activityRouter.delete("/:id",deleteActivity);
 
 
-export default blogRouter;
+export default activityRouter;
