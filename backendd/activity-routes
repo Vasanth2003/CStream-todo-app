@@ -1,0 +1,11 @@
+import express from "express";
+import { getAllActivity, addActivity, deleteActivity} from "./activity-controller.js";
+
+const activityRouter = express.Router();
+
+activityRouter.get("/",getAllActivity);
+activityRouter.post("/add",addActivity);
+activityRouter.delete("/:id",deleteActivity);
+
+
+export default blogRouter;
